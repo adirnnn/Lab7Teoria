@@ -5,11 +5,15 @@ Simplificación de gramáticas libres de contexto.
 | Problema | Contenido | Carpeta |
 |---|---|---|
 | Problema 1 (50%) | Programa que carga gramáticas, valida cada línea con una expresión regular y elimina producciones ε mostrando los pasos | [`problema1/`](problema1/) |
-| Problema 2 (50%) | Resolución manual de las tres CFGs (incisos a-d) en PDF | `problema2/` |
+| Problema 2 (50%) | Resolución manual de las tres CFGs (incisos a-d) en PDF | [`problema2/`](problema2/) |
 
 ## Video de demostración
 
-> **Enlace (YouTube, no listado):** _pendiente de agregar_
+**Enlace (YouTube, no listado):** https://youtu.be/CrdRIIEnVUg
+
+En el video se muestra la ejecución del programa del Problema 1 con las gramáticas 1 y 2,
+incluyendo la modificación de producciones para introducir errores y comprobar que la
+validación detiene la ejecución.
 
 ---
 
@@ -185,3 +189,15 @@ resultado genera exactamente las mismas cadenas que la original (hasta longitud 
   de producciones unitarias (Problema 2, inciso b), que no forma parte de este programa.
 - **Espacios.** Se permiten alrededor de `->` y `|`, pero no dentro de un cuerpo
   (`0 A 0` es inválido), porque cada símbolo es un solo carácter.
+
+---
+
+## Problema 2
+
+Las respuestas del Problema 2 (sin código) están en un documento PDF dentro de la carpeta
+[`problema2/`](problema2/). Para cada una de las tres CFGs se desarrolla todo el procedimiento:
+
+- **a)** Eliminación de producciones ε.
+- **b)** Eliminación de producciones unitarias.
+- **c)** Eliminación de símbolos inútiles (no productivos y no alcanzables).
+- **d)** Conversión a Forma Normal de Chomsky (CNF).
